@@ -1,11 +1,9 @@
 'use strict';
 
-//arrays
+let allEmployees = [];
 
 let secEl = document.getElementById("secOne");
-let formEl = document.getElementById("formID");
-let card = document.getElementById('card')
-let allEmployees = [];
+
 
 //constructor
 let department = ["Administration", "Marketing", "Development", "Finance"]
@@ -21,32 +19,43 @@ function Employee(employeeId, fullName, department, level, ImageUrl, salary) {
     allEmployees.push(this);
 }
 
+for (let i = 0; i < department.length; i++) {
+    let table = document.createElement('table')
+    table.classList = ('table')
+    secEl.appendChild(table)
 
-//DOM
-Employee.prototype.render = function () {
 
-    let card = document.createElement('div')
-    card.classList = ('card')
-    secEl.appendChild(card)
+    if (department[i] === "Administration") {
+        let row1 = document.createElement('tr')
+        row1.textContent = `${department[i]}`
+        table.appendChild(row1)
+    } else if (department[i] === "Marketing") {
+        let row1 = document.createElement('tr')
+        row1.textContent = `${department[i]}`
+        table.appendChild(row1)
+    } else if (department[i] === "Development") {
+        let row1 = document.createElement('tr')
+        row1.textContent = `${department[i]}`
+        table.appendChild(row1)
+    } else {
+        let row1 = document.createElement('tr')
+        row1.textContent = `${department[i]}`
+        table.appendChild(row1)
+    }
 
-    //image
-    let image = document.createElement('img')
-    image.classList = ('cardImg')
-    image.src = this.ImageUrl
-    card.appendChild(image)
-
-    //full name
-    let fullName = document.createElement('h3')
-    fullName.classList = ('cardTitle')
-    fullName.textContent = `Name: ${this.fullName}`
-    card.appendChild(fullName)
-
-    let text = document.createElement('p')
-    text.classList = ('cardText')
-    text.textContent = `ID: ${this.employeeId} \n - Department: ${this.department} \n Level: ${this.level} Salary: ${this.salary}\n `
-    card.appendChild(text)
 
 }
+
+Employee.prototype.render = function () {
+    if (this.department === "Administration") {
+        let sum = 0;
+        let row2 = document.createElement('tbody')
+        row2.textContent = `${this.department}`
+    }
+
+}
+
+console.log(Object.values(Employee));
 
 //function
 Employee.prototype.Salary = function () {
@@ -89,42 +98,3 @@ function renderAll() {
 }
 
 renderAll()
-
-//Events
-formEl.addEventListener("submit", handleSubmit);
-
-function handleSubmit(event) {
-    event.preventDefault();
-    // let empId = Employee.prototype.empId();
-    let name = event.target.fullName.value;
-    let department = event.target.department.value;
-    let level = event.target.level.value;
-    let image = event.target.ImageUrl.value;
-    let salary = Employee.prototype.Salary();
-    let newEmp = new Employee("1000", name, department, level, image, salary);
-    newEmp.render();
-    console.log(newEmp);
-}
-
-//local storage
-
-// function saveData(data) {
-//     let stringfiyData = JSON.stringify(data);
-//     localStorage.setItem("employees", stringfiyData);
-
-// }
-
-// function getData() {
-//     let retrievedData = localStorage.getItem("employees");
-//     let arrayData = JSON.parse(retrievedData);
-//     if (arrayData != null) {
-//         for (let i = 0; i < arrayData.length; i++) {
-//             new Employee(arrayData[i].image, arrayData[i].name, arrayData[i].department, arrayData[i].level)
-//         }
-//     }
-
-//     // render();
-// }
-
-// // saveData();
-// getData();
