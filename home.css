@@ -74,30 +74,37 @@ footer {
     color: black;
 }
 
-#secOne img {
-    width: 200px;
-    background-color: #4E944F;
+main {
+    display: flex;
+    flex-direction: column;
 }
 
-.card1,
-.card2,
-.card3,
-.card4,
-.card5,
-.card6,
-.card7 {
+.card {
+    width: 240px;
     background-color: #4E944F;
     padding: 1rem;
     border-radius: 10px;
     margin: 10px;
 }
 
-#secOne {
-    display: grid;
-    grid-template-columns: repeat(3, 250px);
-    grid-template-rows: repeat(3, auto);
-    row-gap: 10px;
-    column-gap: 20px;
-    text-align: center;
+.cardImg {
+    min-height: 100px;
+    width: 200px;
+}
 
+.cardTitle {
+    min-height: 100px;
+    background-color: #4E944F;
+}
+
+.cardText {
+    min-height: 100px;
+    background-color: #4E944F;
+}
+
+#secOne {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }

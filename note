@@ -1,0 +1,82 @@
+/* html */
+/*
+<!-- <div class="card">
+<img src="./assets/Ghazi.jpg" class="image">
+<h4>Name: Ghazi Samer</h4>
+<p>ID:1000</p>
+<p>Department: Administration</p>
+<p> Level: Senior
+</p>
+<p>1821</p>
+</div>
+<div class="card">
+<img src="./assets/Lana.jpg" class="image">
+<h4>Name: Lana Ali</h4>
+<p>ID:1001</p>
+<p>Department: Finance</p>
+<p> Level: Senior
+</p>
+<p>1821</p>
+</div>
+<div class="card"> <img src="./assets/Tamara.jpg" class="image">
+<h4>Name: Tamara Ayoub</h4>
+<p>ID:1002</p>
+<p>Department: Marketing</p>
+<p> Level: Senior
+</p>
+<p>1821</p>
+</div>
+<div class="card"> <img src="./assets/Safi.jpg" class="image">
+<h4>Name: Safi Walid</h4>
+<p>ID:1003</p>
+<p>Department: Administration</p>
+<p> Level: MidSenior
+</p>
+<p>1221</p>
+</div>
+<div class="card"> <img src="./assets/Omar.jpg" class="image">
+<h4>Name: Omar Zaid</h4>
+<p>ID:1004</p>
+<p>Department: Development</p>
+<p> Level: Senior
+</p>
+<p>1821</p>
+</div>
+<div class="card"> <img src="./assets/Rana.jpg" class="image">
+<h4>Name: Rana Saleh</h4>
+<p>ID:1005</p>
+<p>Department: Development</p>
+<p> Level: Junior
+</p>
+<p>786</p>
+</div>
+<div class="card"> <img src="./assets/Hadi.jpg" class="image">
+<h4>Name: Hadi Ahmad</h4>
+<p>ID:1006</p>
+<p>Department: Finance</p>
+<p> Level: MidSenior
+</p>
+<p>1021</p>
+</div> --> */
+
+/* js
+// //ID
+// let idEmp = document.createElement('h4')
+// // idEmp.classList = ('card')
+// idEmp.textContent = `ID: ${this.employeeId}`
+// secEl.appendChild(idEmp)
+// //Department
+// let department = document.createElement('h4')
+// // department.classList = ('card')
+// department.textContent = `Department: ${this.Department}`
+// secEl.appendChild(department)
+// //level
+// let level = document.createElement('h4')
+// // level.classList = ('card')
+// level.textContent = `Level: ${this.Level}`
+// secEl.appendChild(level)
+// //salary
+// let salary = document.createElement('h4')
+// // salary.classList = ('card')
+// salary.textContent = `${this.Salary}`
+// secEl.appendChild(salary) */
